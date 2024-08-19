@@ -1,0 +1,5 @@
+<asp:HyperLink Target="_blank" 
+    ID="lnkProjectID" runat="server" 
+    Text='<%# Eval("ProjectID") %>' 
+    NavigateUrl='<%# GetEncryptedUrl(Eval("ProjectID"), Eval("ProjectName")) %>'>
+</asp:HyperLink>
